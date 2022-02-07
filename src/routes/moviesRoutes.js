@@ -11,9 +11,9 @@ router.get('/detail/:id', moviesController.detail);
 //Rutas exigidas para la creación del CRUD
 router.get('/add', moviesController.add);
 router.post('/create', moviesController.create);
-/* router.???('/', moviesController.edit); */
-/* router.???('/', moviesController.update); */
-/* router.???('/', moviesController.delete); */
-/* router.???('/', moviesController.destroy); */
+router.get('/edit/:id', moviesController.edit);
+router.put('/update/:id', moviesController.update);
+router.get('/delete/:id', moviesController.delete);
+router.delete('/delete/:id', moviesController.destroy);
 
 module.exports = router;
